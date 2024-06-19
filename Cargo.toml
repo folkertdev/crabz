@@ -4,11 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-rayon = "1.10.0"
-libz-rs-sys = { path = "../zlib-rs/libz-rs-sys" }
-zlib-rs = { path = "../zlib-rs/zlib-rs" }
-libz-sys = { version = "1.1.12", default-features = false, features = ["zlib-ng"] } # use libz-ng in libz compat mode
+libz-rs-sys = "0.2.0" 
+zlib-rs = "0.2.0" 
 memmap2 = "0.9.4"
-bytes = "1.6.0"
-work-queue = "0.1.4"
 spmc = "0.3.0"
+mimalloc = "0.1.42"
